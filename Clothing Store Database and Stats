@@ -1,0 +1,26 @@
+--Create a store database 
+
+CREATE TABLE fasha (id INTEGER PRIMARY KEY, style TEXT, size TEXT, quantity INTEGER, price INTEGER );
+
+INSERT INTO fasha VALUES (1, "Basic Crop Top", "M", 12, "$8");
+INSERT INTO fasha VALUES (2, "Basic Skirt", "S", 4, "$12");
+INSERT INTO fasha VALUES (3, "V-Neck Long Sleeve", "L", 7, "$6");
+INSERT INTO fasha VALUES (4, "Turtle Neck", "M", 7, "$12");
+INSERT INTO fasha VALUES (5, "Regular Tee", "M", 6, "$10");
+INSERT INTO fasha VALUES (6, "Black Leggings", "S", 3, "$17");
+INSERT INTO fasha VALUES (7, "Red Crop Top", "L", 5, "$8");
+INSERT INTO fasha VALUES (8, "Black Mini Skirt", "XS", 22, "$20");
+INSERT INTO fasha VALUES (9, "White Mini Skirt", "XS", 22, "$20");
+INSERT INTO fasha VALUES (10, "Tan Mini Skirt", "XS", 22,"$20");
+INSERT INTO fasha VALUES (11, "Beige Mini Skirt", "XS", 22, "$20");
+INSERT INTO fasha VALUES (12, "Grey Leggings", "M", 6, "$17");
+INSERT INTO fasha VALUES (13, "Black Regular Tee", "M", 8,"$10");
+INSERT INTO fasha VALUES (14, "Grey Regular Tee", "L", 10, "$10");
+INSERT INTO fasha VALUES (15, "Black V-Neck", "M", 7, "$7");
+
+SELECT COUNT(id) FROM fasha;
+SELECT MAX(quantity) FROM fasha;
+
+SELECT * FROM Fasha
+ORDER BY price desc;
+
